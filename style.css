@@ -385,6 +385,7 @@ body {
 
 .block-pricing{
     padding-top: 160px;
+    padding-bottom: 160px;
 }
 
 .block-pricing-inner{
@@ -408,6 +409,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    padding-top: 80px;
 }
 
 .block-pricing-box-free{
@@ -434,7 +436,7 @@ body {
     list-style-image: url("img/check.png");
     margin-left: -15px;
     padding-bottom: 30px;
-    
+
 }
 
 .block-pricing-box-free .block-pricing-box-list:nth-last-child(-n + 2){
@@ -471,3 +473,99 @@ body {
 
 
 /* Block pricing end */
+
+/* Site footer start */
+.site-footer{
+    background-color: #F9FAFC;
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+
+.site-footer-head{
+    display: flex;
+    gap: 55px;
+}
+
+.site-footer-links{
+    flex: 0 1 190px;
+}
+
+.site-footer-title{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.site-footer-list{
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.site-footer-menu a,
+.site-footer-list a{
+    font-size: 14px;
+    line-height: 250%;
+    color: #0F2137;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.site-footer-foot{
+    margin-top: 50px;
+    padding-top: 35px;
+    border-top: 1px solid #D9E0E7;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.site-footer-copyright{
+    font-size: 14px;
+    margin: 0;
+}
+
+.site-footer-menu{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+}
+
+@media(max-width: 991px){
+    .site-footer-head{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 767px){
+    .site-footer{
+        padding-bottom: 80px;
+    }
+    .site-footer-head{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .site-footer-links{
+        flex: 0 1 100%;
+    }
+    .site-footer-foot{
+        flex-direction: column;
+        padding-top: 50px;
+        gap: 50px;
+    }
+    .site-footer-menu{
+        flex-direction: column;
+        gap: 0;
+        margin-left: 0;
+        width: 100%;
+        order: -1;
+    }
+}
+
+/* Site footer end */
